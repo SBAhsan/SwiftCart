@@ -12,7 +12,10 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://kit.fontawesome.com/5886153abe.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5886153abe.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -44,19 +47,21 @@
               >
                 <li><a>Home</a></li>
                 <li>
-                  <a>Products</a>
+                  <a href="products.html">Products</a>
                 </li>
                 <li><a>About</a></li>
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-xl lg:ml-30">SwiftCart</a>
+            <a class="btn btn-ghost text-xl lg:ml-30 text-[#6366F1] font-bold"
+              >SwiftCart</a
+            >
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
               <li><a>Home</a></li>
               <li>
-                <a>Products</a>
+                <a href="products.html">Products</a>
               </li>
               <li><a>About</a></li>
               <li><a>Contact</a></li>
@@ -71,16 +76,19 @@
       <!-- hero -->
       <div
         class="hero min-h-screen -mt-10 lg:-mt-30"
-        style="
-          background-image: url(Assets/banner-image.png);
-        "
+        style="background-image: url(Assets/banner-image.png)"
       >
         <div class="hero-overlay"></div>
-        <div class="hero-content text-neutral-content text-center mt-20 lg:text-start lg:-ml-140">
+        <div
+          class="hero-content text-neutral-content text-center mt-20 lg:text-start lg:-ml-140"
+        >
           <div class="max-w-9/10">
-            <h1 class="mb-5 text-3xl md:text-6xl font-bold">Best Collection For You</h1>
+            <h1 class="mb-5 text-3xl md:text-6xl font-bold">
+              Best Collection For You
+            </h1>
             <p class="mb-5 max-w-9/10">
-              Discover the latest trends in fashion, electronics and more. Shop with confidence and style at SwiftCart.
+              Discover the latest trends in fashion, electronics and more. Shop
+              with confidence and style at SwiftCart.
             </p>
             <button class="btn btn-primary">Shop Now</button>
           </div>
@@ -89,34 +97,104 @@
     </header>
 
     <main>
-        <!-- why choose us -->
-        <section class="text-center space-y-5 mt-20">
-            <h1 class="text-4xl font-bold">Why Choose Us</h1>
-            <p>We provide the best shopping experience with top-notch services</p>
-        </section>
+      <!-- why choose us -->
+      <section class="text-center space-y-5 mt-20">
+        <h1 class="text-4xl font-bold">Why Choose Us</h1>
+        <p>We provide the best shopping experience with top-notch services</p>
+      </section>
 
-        <section class="flex flex-grow items-center mt-25 gap-10 mx-20 ">
-            <div class="shadow-md py-7 px-5 space-y-4">
-                <div class="-mt-20 mb-5"><i class="fa-solid fa-truck fa-2xl"></i></div>
-                <h3 class="font-bold text-lg">Fast Delivery</h3>
-                <p>Get your orders delivered to your doorstep quickly and efficiently.</p>
-            </div>
-            <div class="shadow-md py-7 px-5 space-y-4">
-                <div class="-mt-20 mb-5"><i class="fa-solid fa-headset fa-2xl"></i></div>
-                <h3 class="font-bold text-lg">24/7 Support</h3>
-                <p>Our support team is available around the clock to assist you.</p>
-            </div>
-            <div class="shadow-md py-7 px-5 space-y-4">
-                <div class="-mt-20 mb-5"><i class="fa-solid fa-shield-halved fa-2xl"></i></div>
-                <h3 class="font-bold text-lg">Secure Payment</h3>
-                <p>Experience safe and secure transactions with our encrypted payment system.</p>
-            </div>
-            <div class="shadow-md py-7 px-5 space-y-4">
-                <div class="-mt-20 mb-5"><i class="fa-solid fa-repeat fa-2xl"></i></div>
-                <h3 class="font-bold text-lg">Easy Returns</h3>
-                <p>Not satisfied? Return your products easily within 30 days.</p>
-            </div>
-        </section>
+      <section
+        class="flex flex-col flex-grow lg:flex-row items-center mt-25 gap-20 lg:gap-10 mx-20"
+      >
+        <div class="shadow-md py-7 px-5 space-y-4">
+          <div class="-mt-20 mb-5">
+            <i class="fa-solid fa-truck fa-2xl"></i>
+          </div>
+          <h3 class="font-bold text-lg">Fast Delivery</h3>
+          <p>
+            Get your orders delivered to your doorstep quickly and efficiently.
+          </p>
+        </div>
+        <div class="shadow-md py-7 px-5 space-y-4">
+          <div class="-mt-20 mb-5">
+            <i class="fa-solid fa-headset fa-2xl"></i>
+          </div>
+          <h3 class="font-bold text-lg">24/7 Support</h3>
+          <p>Our support team is available around the clock to assist you.</p>
+        </div>
+        <div class="shadow-md py-7 px-5 space-y-4">
+          <div class="-mt-20 mb-5">
+            <i class="fa-solid fa-shield-halved fa-2xl"></i>
+          </div>
+          <h3 class="font-bold text-lg">Secure Payment</h3>
+          <p>
+            Experience safe and secure transactions with our encrypted payment
+            system.
+          </p>
+        </div>
+        <div class="shadow-md py-7 px-5 space-y-4">
+          <div class="-mt-20 mb-5">
+            <i class="fa-solid fa-repeat fa-2xl"></i>
+          </div>
+          <h3 class="font-bold text-lg">Easy Returns</h3>
+          <p>Not satisfied? Return your products easily within 30 days.</p>
+        </div>
+      </section>
+
+      <section>
+        <h3>Trending Now</h3>
+        <div
+          id="trending-products-container"
+          class="w-5/6 mx-auto space-y-4 md:grid md:grid-cols-2 md:gap-5 lg:grid lg:grid-cols-3 lg:gap-5"
+        ></div>
+      </section>
     </main>
+
+    <footer class="bg-[#1E293B] text-white">
+      <footer
+        class="footer lg:footer-horizontal bg-[#1E293B] text-white text-base-content p-10"
+      >
+        <nav class="w-68">
+          <a class="text-xl text-[#6366F1] font-bold">SwiftCart</a>
+          <p>
+            Your one-stop shop for all your fashion and lifestyle needs. Quality
+            products, fast delivery, and excellent support.
+          </p>
+        </nav>
+        <nav>
+          <h6 class="footer-title">QUICK LINKS</h6>
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">Products</a>
+          <a class="link link-hover">About</a>
+          <a class="link link-hover">Contact</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">SUPPORT</h6>
+          <a class="link link-hover">FAQ</a>
+          <a class="link link-hover">Shipping</a>
+          <a class="link link-hover">Returns</a>
+          <a class="link link-hover">Privacy policy</a>
+        </nav>
+        <form class="w-80">
+          <h6 class="footer-title">SUBSCRIBE TO OUR NEWSLETTER</h6>
+          <p>
+            The latest news, articles, and resources, sent to your inbox weekly.
+          </p>
+          <fieldset>
+            <div class="join space-x-2">
+              <input
+                type="text"
+                placeholder="Enter your email address..."
+                class="input input-bordered text-black rounded-2xl"
+              />
+              <button class="btn btn-primary rounded-2xl">Subscribe</button>
+            </div>
+          </fieldset>
+        </form>
+      </footer>
+      <p class="border-t-1 mx-10 pt-5 pb-3">© 2025 SwiftCart, Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>

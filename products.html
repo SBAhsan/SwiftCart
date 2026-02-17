@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+
+    <!-- tailwind css & daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/5886153abe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="navbar bg-base-100 shadow-md">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a>Products</a>
+              </li>
+              <li><a>About</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl lg:ml-30 text-[#6366F1] font-bold">SwiftCart</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a>Products</a>
+            </li>
+            <li><a>About</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end lg:mr-30">
+          <a><img src="Assets/trolley.png" class="w-5 h-5" /></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Our products -->
+
+    <section class="text-center space-y-5 my-20">
+      <h2 class="text-4xl font-bold">Our Products</h2>
+      <div id="category-container" class="w-2/3 mx-auto flex flex-wrap justify-center gap-3"></div>
+    </section>
+
+    <section>
+      <div
+        id="products-container"
+        class="w-5/6 mx-auto space-y-4 md:grid md:grid-cols-2 md:gap-5 lg:grid lg:grid-cols-3 lg:gap-5"
+      ></div>
+      
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-[#1E293B] text-white">
+      <footer
+        class="footer lg:footer-horizontal bg-[#1E293B] text-white text-base-content p-10"
+      >
+        <nav class="w-68">
+          <a class="text-xl text-[#6366F1] font-bold">SwiftCart</a>
+          <p>
+            Your one-stop shop for all your fashion and lifestyle needs. Quality
+            products, fast delivery, and excellent support.
+          </p>
+        </nav>
+        <nav>
+          <h6 class="footer-title">QUICK LINKS</h6>
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">Products</a>
+          <a class="link link-hover">About</a>
+          <a class="link link-hover">Contact</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">SUPPORT</h6>
+          <a class="link link-hover">FAQ</a>
+          <a class="link link-hover">Shipping</a>
+          <a class="link link-hover">Returns</a>
+          <a class="link link-hover">Privacy policy</a>
+        </nav>
+        <form class="w-80">
+          <h6 class="footer-title">SUBSCRIBE TO OUR NEWSLETTER</h6>
+          <p>
+            The latest news, articles, and resources, sent to your inbox weekly.
+          </p>
+          <fieldset>
+            <div class="join space-x-2">
+              <input
+                type="text"
+                placeholder="Enter your email address..."
+                class="input input-bordered text-black rounded-2xl"
+              />
+              <button class="btn btn-primary rounded-2xl">Subscribe</button>
+            </div>
+          </fieldset>
+        </form>
+      </footer>
+      <p class="border-t-1 mx-10 pt-5 pb-3">
+        © 2025 SwiftCart, Inc. All rights reserved.
+      </p>
+    </footer>
+  </body>
+
+  <script src="./js/products.js"></script>
+</html>
